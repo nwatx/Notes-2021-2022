@@ -1,0 +1,28 @@
+\documentclass{scrreprt} % comment this out when done editing
+\usepackage{standalone}
+\usepackage{chez}
+
+\begin{document}
+
+\subsection{Chicken McNugget Theorem}
+
+The highest solution that satisfies the equation
+
+$$
+ax + by = c : \{a, b, c \in \mathbb{Z}\}
+$$
+
+where $a$ and $b$ are coprime is equivalent to $ab - a - b$
+
+\begin{example}[Art of Problem Solving]
+	Joe is at McDonalds, which sells McNuggets in packs of $9$ and $11$.
+	What is the highest number of McNuggets he cannot buy?
+\end{example}
+
+{\fontsize{10}{48} \selectfont 10ptText}
+Testing $1$ vs 1
+
+By Chicken McNugget theorem, since $\gcd(9, 11) = 1$, then the answer is
+$9\cdot 11 - 9 - 11 = 79$ McNuggets.
+
+\end{document}

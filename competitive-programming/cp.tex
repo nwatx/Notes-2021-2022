@@ -1,0 +1,24 @@
+\documentclass{scrreprt}
+\usepackage{standalone}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphbox} % 1120
+\usepackage{chez}
+
+\graphicspath{{figures/}}
+
+\title{Competitive Programming}
+\author{Neo Wang}
+\date{Last Updated: \today}
+
+\begin{document}
+\maketitle
+\setcounter{tocdepth}{2}
+\tableofcontents
+\newpage
+
+\chapter{Number Theory}
+\section{Elementary Tricks}
+\input{src/number-theory/chickenmcnuggettheorem.tex}
+
+\end{document}

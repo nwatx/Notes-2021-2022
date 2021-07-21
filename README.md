@@ -14,7 +14,7 @@ There are several main files and directories you need to keep track of.
 
 Each template folder contains
 
-`src` - where you put your daily notes in format: YYYYMMDD
+`src` - where you put your daily notes in format: YYYYMMDD, or any other method you may prefer.
 
 A `*.tex` file. This file will act as the culmination of every other file.
 
