@@ -1,4 +1,6 @@
 {
 	"latex-workshop.latex.autoClean.run": "onBuilt",
 	"latex-workshop.view.pdf.zoom": "page-fit",
+	"files.autoSave": "off",
+	"editor.acceptSuggestionOnEnter": "off"
 }

@@ -1,0 +1,84 @@
+% \documentclass{scrreprt} % comment this out when done editing
+\usepackage{standalone}
+\usepackage{chez}
+
+% \NewDocumentCommand{\evalat}{sO{\big}mm}{%
+%   \IfBooleanTF{#1}
+%    {\mleft. #3 \mright|_{#4}}
+%    {#3#2|_{#4}}%
+% }
+
+\begin{document}
+
+\subsection{August 24, 2021 - Derivatives}
+
+\begin{example}[Parabolic]
+
+Assume the graph is something generally parabolic, such as $f(t) = t^2$.
+
+First, recall the second kinematic
+
+$$
+\Delta x = v_0t + \frac{1}{2}at^2
+$$
+
+Recall that for our tangent graphs (without the use of much calculs), we would
+find the slope of a secant line. We would define the slope as
+
+$$
+v = \frac{\Delta x}{\Delta t}
+$$
+
+which would differ from the instantaneous velocity for the vast majority of the
+time.
+
+As a result, we take
+
+$$
+v = \lim_{\Delta x \rightarrow 0}\frac{x_f - x_i}{t_f - t_i}
+$$
+
+for
+
+$$
+\lim_{\Delta x \rightarrow 0}\frac{5(t + \Delta t)^2 - 5t^2}{t + \Delta t - t}
+= \lim_{\Delta x \rightarrow 0}5\Delta t + 10t = 10t
+$$
+
+notice how this equation looks similar to $v = v_0 + at$ 
+
+\end{example}
+
+\begin{remark}[Historical Context - Leibniz and Newton]
+	Derivative - coined by "Leibniz."
+	
+	Issues with naming it this way: derivative implies derivation, although the
+	process itself of taking a derivative is differentation.
+
+	$\Delta x$ was renamed from $\Delta x$ to $dx$. The only real velocity equation
+	according to most univeristy professors is $$v = \frac{dy}{dx} = \frac{dx}{dt}$$
+
+	Then, the acceleration equation becomes
+	$$a = \frac{dv}{dt} = \frac{d}{dt}v = \frac{d^2y}{dx^2}$$
+\end{remark}
+
+\begin{remark}[Rules of Differentiation]
+	A derivative is an expression that represents the rate of change of a function
+	with respect to an independent variable.
+
+	\begin{enumerate}
+		\item Constant Rule. Example: if $x=6$, then $\frac{dy}{dx}=0$.
+		\item Power rule: $$\frac{d}{dx}Cdt^n = (C \cdot n)t^{n-1}$$
+	\end{enumerate}
+\end{remark}
+
+\begin{example}[Example]
+	What is the squirrel's acceleration at $t=1$ second if its position is
+	given by the equation $x = 2t^5 - 3t^2 + 2t - 4$?
+
+	$$\frac{d}{dx} = 10t^4 - 6t + 2 = 40t^3 - 6$$
+	$$\evalat{40t^3 - 6}{t = 1} = 34 m / s$$
+\end{example}
+
+
+\end{document}
