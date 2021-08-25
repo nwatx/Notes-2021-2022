@@ -1,12 +1,16 @@
-% \documentclass{scrreprt} % comment this out when done editing
-\usepackage{standalone}
+\documentclass{scrreprt} % comment this out when done editing
+% \documentclass{standalone}
+% \usepackage{standalone}
 \usepackage{chez}
+\usepackage{pgfplots}
+% We will externalize the figures
+\usepackage{tikz}
 
-% \NewDocumentCommand{\evalat}{sO{\big}mm}{%
-%   \IfBooleanTF{#1}
-%    {\mleft. #3 \mright|_{#4}}
-%    {#3#2|_{#4}}%
-% }
+\NewDocumentCommand{\evalat}{sO{\big}mm}{%
+  \IfBooleanTF{#1}
+   {\mleft. #3 \mright|_{#4}}
+   {#3#2|_{#4}}%
+}
 
 \begin{document}
 
@@ -79,6 +83,79 @@ notice how this equation looks similar to $v = v_0 + at$
 	$$\frac{d}{dx} = 10t^4 - 6t + 2 = 40t^3 - 6$$
 	$$\evalat{40t^3 - 6}{t = 1} = 34 m / s$$
 \end{example}
+
+\subsection{August 25, 2021}
+
+\subsubsection{Setting up the TI-89}
+
+\begin{remark}[TI-89 Setup]
+\begin{enumerate}
+	\item Hit option, and notice that there is an apps desktop.
+	\item Toggle over, and select off. Then, it will take you
+	directly to the screen to do calculations.
+	\item If you type in $\frac{3}{7}$, it will return the same thing. There
+	are two modes: approximate and exact. You will change this to approximate.
+	\item Now, if you type in $\frac{3}{7}$ you should get $0.42857142857142855$.
+	\item Toggle display digits from float 6 to float 10.
+	\item Make sure your calculator is in degree mode.
+	\item Turn on pretty print.
+\end{enumerate}
+\end{remark}
+
+\subsubsection{Calculating with the TI-89}
+
+\begin{remark}[TI-89 calculations]
+\begin{enumerate}
+	\item We type in our function after putting it into F3 mode (calculus).
+	\item If we type in `3t' the TI-89 treats that as one variable. Instead,
+	type $3 \cdot t$.
+	\item $x = 3t^3$.
+	\item Since we want the derivative with respect to time, append a comma after
+	your function and then type what to take it with respect to.
+	\item Our calculator should then output $$\frac{d}{dx} 3t^3 = 9t^2$$
+	\item To clear your screen, do ``F1 + 8''
+	\item TI-89s store variables across calculations. It's a good idea to clear
+	your calculation before you start computing things.
+\end{enumerate}
+\end{remark}
+
+\begin{example}[Sketching graphs]
+	$$y = 3t^5-6t^2 = 3t^2(t^3 - 2)$$
+
+	\begin{enumerate}
+		\item Find intercepts of the function.
+		\begin{enumerate}
+			\item Hit F2 to get the calculator to do algebra. Hit SOLVE.
+			\item Directly type the equation above into the the calculator.
+			\item Hit SOLVE, and include your implicit operator $t$.
+			\item Ask it to solve for $t$
+			\item The resulting roots are $0, \sqrt{2}, -\sqrt{2}$.
+			\item These should be easy to graph now.
+		\end{enumerate}
+		\item Find critical points:
+		\begin{enumerate}
+			\item $$\frac{dy}{dt} = 15t^4 - 13t^3 = 0$$
+			\item Our resulting points are: $(-1.1, 3.15), (0,0), (-1.1, -3.15)$
+		\end{enumerate}
+		\item Find whether they are maximum or minimum or neither.
+		\begin{itemize}
+			\item We can use the first derivative or second derivative test.
+		\end{itemize}
+		\item Find points of inflection
+		\begin{itemize}
+			\item $(0.774, -1.9)$
+			\item $(-0.774, 1.9)$
+		\end{itemize}
+	\end{enumerate}
+
+	\begin{tikzpicture}
+		\begin{axis}
+		\addplot[color=blue, domain=-0.5:1.4, range=-5:5, samples=100]{3*x^5-6*x^2};
+		\end{axis}
+	\end{tikzpicture}
+\end{example}
+
+
 
 
 \end{document}
