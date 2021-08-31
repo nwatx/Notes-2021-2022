@@ -148,14 +148,76 @@ notice how this equation looks similar to $v = v_0 + at$
 		\end{itemize}
 	\end{enumerate}
 
+	\begin{center}
 	\begin{tikzpicture}
 		\begin{axis}
 		\addplot[color=blue, domain=-0.5:1.4, range=-5:5, samples=100]{3*x^5-6*x^2};
 		\end{axis}
 	\end{tikzpicture}
+	\end{center}
 \end{example}
 
+\subsection{August 26, 2021 - Integration}
+
+\begin{example}
+	$$x = t^3 - 3t + 2$$
+
+	\begin{enumerate}
+		\item Find intercepts, $0 = t^3 - 3t + 2$
+		\item Find critical points. $\frac{dx}{dt}=3t^2-3=0$. This returns
+		$(-1, 4), (1,0)$
+		\item Check Concavity
+
+		$$\frac{d^2x}{dt^2} = 6t$$
+
+		\item And set the resulting points to the critical point values. Evaluate,
+		and determine their resulting sign.
+		\item Find points of inflection.
+		
+		$$0 = \frac{d^2x}{dt^2} = 6t, t = 0$$
 
 
+	\end{enumerate}
+
+	\begin{center}
+	\begin{tikzpicture}
+		\begin{axis}
+		\addplot[color=blue, domain=-3:3, range=-5:5, samples=100]{x^3 - 3 * x + 2};
+		\end{axis}
+	\end{tikzpicture}
+	\end{center}
+\end{example}
+
+\begin{example}[Integration 1]
+	Let $a = 6t$, then $$\int \frac{d}{dt} 6t = 3t^2 + C$$
+
+	What does this actually do? Solve for the area under the curve.
+\end{example}
+
+\begin{example}[Integration 2]
+	If $v = 10t^2$, what is the displacment of the object at time $t = 5$?
+
+	$$
+	\int \frac{d}{dt}_0^5 10t^2 =
+	\evalat{\frac{10}{3}t^3}{t=5} - \evalat{\frac{10}{3}t^3}{t=0}
+	\approx 416.667
+	$$
+\end{example}
+
+Some things you may have learned from Calculus AB/BC
+
+$$\sum dx = \sum {v \cdot dt}$$
+$$x = \int v \cdot dt$$
+
+\subsection{August 27 - Kinematics}
+
+\begin{definition}[Kinematics]
+	\begin{itemize}
+		\item 1st Kinematic = $$\vec{v} = \vec{v}_0 + \vec{a} \cdot t$$
+		\item 2nd Kinematic = $$\Delta x = v_0t + \frac{1}{2}at^2$$
+		\item 3rd Kinematic = $$\vec{v}^2 = \vec{v_0}^2 + 2\vec{a}\Delta \vec{x}$$
+		\item 4th Kinematic = $$\Delta \vec{x}= \frac{1}{2}(v + v_0)\cdot t = \int_{t=a}^{t=b}f(x)dx$$
+	\end{itemize}
+\end{definition}
 
 \end{document}
