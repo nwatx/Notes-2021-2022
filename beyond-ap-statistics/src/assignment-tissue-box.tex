@@ -15,27 +15,48 @@ participants correctly identified the soda. Do these data provide strong evidenc
 are able to detect the difference between diet and regular soda (i.e. that they are doing better
 than expected by random guessing)?
 
+
+
 \section{State}
 
-We will conduct a 95\% confidence z-test in order to determine whether there
-is an observable difference between diet and regular soda.
+We will conduct a 95\% confidence z-test with $\alpha = 0.05$ in order to determine whether there
+is an observable difference between diet and regular soda. $H_0: p = 0.5$, $H_a: p \neq 0.5$
+where $p$ is the true proportion of people who identify the diet soda correctly.
 
 \section{Plan}
 
 \begin{itemize}
 	\item 80 people is less than 10\% of all people.
-	\item Let's define $p_c$ as the proportion that correctly identify the soda.
+	\item The 80 people are randomly sampled.
+	\item Let's define $p$ as the proportion that correctly identify the soda.
 	\item The people who correctly identified the soda are independent of
 	the people who did not correctly identify the soda.
-	\item Then, $n\hat{p_c}$ is the number of people who correctly identify
-	the soda, and $n\hat{p_c} = 53 > 10$.
-	\item $n(1-\hat{p_c})$ is the number of people who incorrectly identify the
-	soda, and $n(1-\hat{p_c})= 27 > 10$.
+	\item Then, $np_0$ is the number of people who correctly identify
+	the soda, and $np_0 = 53 > 10$.
+	\item $n(1-p_0)$ is the number of people who incorrectly identify the
+	soda, and $n(1-p_0)= 27 > 10$.
+	\item Therefore, the large counts condition is satisfied.
+	\item The normal is hence appropriate.
 \end{itemize}
 
 \section{Do}
 
+Formula for 1-sample z-test:
+
+$$
+z=\frac{\hat{p}-p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}}, p_0 = 0.5, \hat{p} = 0.6625, n = 80
+$$
+
+Our resulting $z$-score is 2.904, which corresponds to a $p$-value of 0.004.
+
 % insert image in latex
 \includegraphics[width=300px]{2021-08-31-11-24-27.png}
+
+\section{Conclude}
+
+Since $p = 0.004 < 0.05$ we reject the null hypothesis and conclude that there
+is strong evidence that people are able to detect the difference between diet
+and regular soda.
+
 
 \end{document}
