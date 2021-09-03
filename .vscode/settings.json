@@ -3,6 +3,7 @@
   "latex-workshop.view.pdf.zoom": "page-fit",
   "files.autoSave": "off",
   "editor.acceptSuggestionOnEnter": "off",
+  "gitdoc.autoCommitDelay": 5000,
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
