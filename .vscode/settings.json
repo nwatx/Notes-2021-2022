@@ -4,6 +4,7 @@
   "files.autoSave": "off",
   "editor.acceptSuggestionOnEnter": "off",
   "gitdoc.autoCommitDelay": 5000,
+  "gitdoc.enabled": true,
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
