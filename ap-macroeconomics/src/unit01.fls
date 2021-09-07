@@ -1361,6 +1361,16 @@ INPUT /home/neo/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring
 INPUT /home/neo/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /home/neo/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
 INPUT /home/neo/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT ./unit01.out
+INPUT unit01.out
+INPUT ./unit01.out
+INPUT unit01.out
+INPUT ./unit01.out
+INPUT unit01.out
+INPUT ./unit01.out
+INPUT unit01.out
+INPUT ./unit01.out
+INPUT ./unit01.out
 OUTPUT unit01.out
 OUTPUT unit01.pdf
 INPUT /home/neo/.miktex/texmfs/install/tex/latex/bookmark/bookmark.sty
