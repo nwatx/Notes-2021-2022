@@ -1000,7 +1000,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
 LaTeX Info: Redefining \nameref on input line 5.
- (unit01.out) (unit01.out)
 \@outlinefile=\write4
 \openout4 = `unit01.out'.
 
@@ -1090,37 +1089,4 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 25.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 27.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 48.
- [1
-
-{/home/neo/.miktex/texmfs/data/pdftex/config/pdftex.map}]
-<2021-08-24-13-20-08.png, id=28, 349.305pt x 633.36626pt>
-File: 2021-08-24-13-20-08.png Graphic file (type png)
-<use 2021-08-24-13-20-08.png>
-Package pdftex.def Info: 2021-08-24-13-20-08.png  used on input line 150.
-(pdftex.def)             Requested size: 139.71951pt x 253.34201pt.
- [2] [3 <./2021-08-24-13-20-08.png>]
-File: 2021-08-24-13-20-08.png Graphic file (type png)
-<use 2021-08-24-13-20-08.png>
-Package pdftex.def Info: 2021-08-24-13-20-08.png  used on input line 196.
-(pdftex.def)             Requested size: 139.71951pt x 253.34201pt.
- [4] [5] [6] [7] (unit01.aux)
-Package rerunfilecheck Info: File `unit01.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- ) 
-Here is how much of TeX's memory you used:
- 37374 strings out of 480807
- 739465 string characters out of 2900791
- 1207400 words of memory out of 3000000
- 54235 multiletter control sequences out of 15000+600000
- 472390 words of font info for 150 fonts, out of 8000000 for 9000
- 0 hyphenation exceptions out of 8191
- 108i,8n,108p,10683b,1153s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/home/neo/.miktex/texmfs/install/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/home/neo/.miktex/texmfs/install/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/home/neo/.miktex/texmfs/install/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/home/neo/.miktex/texmfs/install/fonts/enc/dvips/libertine/lbtn_naooyc.enc}</home/neo/.miktex/texmfs/install/fonts/type1/public/newtx/LibertineMathMI.pfb></home/neo/.miktex/texmfs/install/fonts/type1/public/newtx/LibertineMathRM.pfb></home/neo/.miktex/texmfs/install/fonts/type1/public/libertine/LinBiolinumT.pfb></home/neo/.miktex/texmfs/install/fonts/type1/public/libertine/LinBiolinumTB.pfb></home/neo/.miktex/texmfs/install/fonts/type1/public/libertine/LinLibertineT.pfb></home/neo/.miktex/texmfs/install/fonts/type1/public/libertine/LinLibertineTB.pfb></home/neo/.miktex/texmfs/install/fonts/type1/public/newtx/txmiaX.pfb>
-Output written on unit01.pdf (7 pages, 360148 bytes).
-PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 41034 words of extra memory for PDF output out of 42996 (max. 10000000)
-
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT
