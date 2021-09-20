@@ -5,6 +5,9 @@
   "editor.acceptSuggestionOnEnter": "off",
   "gitdoc.autoCommitDelay": 5000,
   "gitdoc.enabled": true,
+  "files.associations": {
+    "*.tex": "txt"
+  },
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
