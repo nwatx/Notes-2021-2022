@@ -6,7 +6,7 @@
   "gitdoc.autoCommitDelay": 5000,
   "gitdoc.enabled": true,
   "files.associations": {
-    "*.tex": "txt"
+    "*.tex": "md"
   },
   "latex-workshop.latex.tools": [
     {
