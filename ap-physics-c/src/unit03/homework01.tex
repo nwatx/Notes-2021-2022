@@ -1,12 +1,41 @@
 \documentclass{scrreprt} % comment this out when done editing
 % \documentclass{standalone}
 % \usepackage{standalone}
+\usepackage{amsmath}
 \usepackage{chez}
+
+\NewDocumentCommand{\evalat}{sO{\big}mm}{%
+  \IfBooleanTF{#1}
+   {\mleft. #3 \mright|_{#4}}
+   {#3#2|_{#4}}%
+}
 
 \begin{document}
 
-\section{New Section}
+\section{Homework 01 - Forces + Newton's Laws}
 
-New Content
+9.
+
+a)
+
+\begin{align*}
+	a_x(0.7) &= \frac{d}{dx}v_x(0.7) = \frac{d}{dx}-15 + 2t - 4t^3 \\
+			 &= \boxed{-3.88 m/s^2}
+\end{align*}
+
+
+13.
+
+17.
+
+26.
+
+27.
+
+41.
+
+44.
+
+54.
 
 \end{document}
